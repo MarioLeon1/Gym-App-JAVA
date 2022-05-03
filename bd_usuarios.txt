@@ -1,0 +1,16 @@
+CREATE TABLE `bd_usuarios`.`usuarios` (
+  `nick` VARCHAR(20) NOT NULL,
+  `contraseña` VARCHAR(20) NOT NULL,
+  `nombre` VARCHAR(20) NOT NULL,
+  `apellido1` VARCHAR(20) NOT NULL,
+  `apellido2` VARCHAR(20) NOT NULL,
+  `ciudad` VARCHAR(20) NOT NULL,
+  `email` VARCHAR(40) NOT NULL,
+  `telefono` CHAR(9) NOT NULL,
+  PRIMARY KEY (`nick`));
+
+
+INSERT INTO `bd_usuarios`.`usuarios` (`nick`, `contraseña`, `nombre`, `apellido1`, `apellido2`, `ciudad`, `email`, `telefono`) VALUES ('mario', '12345', 'mario', 'serna', 'león', 'alicante', 'X', 'Y');
+INSERT INTO `bd_usuarios`.`usuarios` (`nick`, `contraseña`, `nombre`, `apellido1`, `apellido2`, `ciudad`, `email`, `telefono`) VALUES ('gerardo', '12345', 'gerardo', 'fructuoso', 'vidal-aragón', 'sevilla', 'X', 'Y');
+INSERT INTO `bd_usuarios`.`usuarios` (`nick`, `contraseña`, `nombre`, `apellido1`, `apellido2`, `ciudad`, `email`, `telefono`) VALUES ('diego', '12345', 'diego', 'contreras', 'gonzalez', 'madrid', 'X', 'Y');
+INSERT INTO `bd_usuarios`.`usuarios` (`nick`, `contraseña`, `nombre`, `apellido1`, `apellido2`, `ciudad`, `email`, `telefono`) VALUES ('david', '12345', 'david', 'gregorio', 'muñoz', 'madrid', 'X', 'Y');
