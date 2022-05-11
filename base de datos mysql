@@ -1,0 +1,29 @@
+CREATE DATABASE bd_usuarios;
+use bd_usuarios;
+CREATE TABLE usuarios(
+nick VARCHAR(20) NOT NULL,
+contraseña VARCHAR(20) NOT NULL,
+nombre VARCHAR(20) NOT NULL,
+apellido1 VARCHAR(20) NOT NULL,
+apellido2 VARCHAR(20) NOT NULL,
+ciudad VARCHAR(20) NOT NULL,
+email VARCHAR(40) NOT NULL,
+telefono VARCHAR(9) NOT NULL,
+PRIMARY KEY(nick)
+);
+
+
+CREATE TABLE pistas(
+nomre_pista VARCHAR(30),
+id_pista INT primary key
+);
+CREATE TABLE reservas(
+hora_reserva date,
+id_pista int,
+nick VARCHAR (28),
+PRIMARY KEY(nick,id_pista)
+);
+INSERT INTO usuarios VALUES('mario','12345','mario','serna','leon','alicante','X','Y');
+INSERT INTO usuarios VALUES('gerardo','12345','gerardo','fructuoso','vidal-aragon','sevilla','X','Y');
+INSERT INTO usuarios VALUES('diego','12345','diego','contreras','gonzalez','madrid','X','Y');
+INSERT INTO usuarios VALUES('david','12345','david','gregorio','muñoz','madrid','X','Y');
